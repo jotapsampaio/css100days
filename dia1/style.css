@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quadrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to top right, #43389F, #4ec6ca);
+    color: #ffffff;
+    width: 400px;
+    height: 400px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.384);
+}
+
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.numero {
+    position: relative;
+    width: 200px;
+    height: 100px;
+}
+
+.primeiro-um {
+    position: absolute;
+    top: 0;
+    left: -16px;
+    z-index: 1;
+    background-color: #ffffff;
+    height: 40px;
+    width: 20px;
+    transform: rotate(50deg);
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.247);
+}
+
+.segundo-um {
+    position: absolute;
+    z-index: 4;
+    background-color: #ffffff;
+    height: 100px;
+    width: 24px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+}
+
+.primeiro-zero, .segundo-zero {
+    position: absolute;
+    left: 17px;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    border: 24px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+}
+
+.segundo-zero {
+    z-index: 2;
+    left: 100px;
+}
+
+.texto-css-challenge {
+    font-family: 'Courier New', 'Courier', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.texto-grande {
+    display: block;
+    font-size: 80px;
+    margin-top: -12px;
+}
+
+.texto-pequeno {
+    display: block;
+    font-size: 23px;
+    margin-top: -20px;
+}
