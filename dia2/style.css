@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: darkblue;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+}
+
+.centro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+}
+
+.linha-um, .linha-dois, .linha-tres {
+    position: absolute;
+    left: 45px;
+    width: 10px;
+    height: 90px;
+    background-color: #f81a1a;
+    transform: rotate(90deg);
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.527);
+}
+
+.linha-um {
+    animation: animacaoLinhaUm 1s ease-in-out forwards;
+}
+
+.linha-dois {
+    position: absolute;
+    top: -25px;
+    animation: animacaoLinhaDois 1s ease-in-out forwards;
+}
+
+.linha-tres {
+    position: absolute;
+    top: 25px; 
+    animation: animacaoLinhaTres 1s ease-in-out forwards;
+}
+
+.sem-animacao {
+    animation: none;
+}
+
+@keyframes animacaoLinhaUm {
+    0%{transform: rotate(90deg);}
+    40%{transform: scale(.2) rotate(90deg);}
+    61%{transform: scale(.1) rotate(90deg);}
+    100%{transform: scaley(0) rotate(90deg);}
+}
+
+@keyframes animacaoLinhaDois {
+    50%{top: 2px;}
+    100%{transform: rotate(40deg); top: 5px; z-index: 1;}
+}
+
+@keyframes animacaoLinhaTres {
+    50%{top: 1px;}
+    100%{transform: rotate(-40deg); top: 5px;}
+}
