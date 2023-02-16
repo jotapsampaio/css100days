@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="https://icons.iconarchive.com/icons/blackvariant/button-ui-system-apps/256/Numbers-icon.png"
+        type="image/x-icon">
+    <title>Desafios</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #9AEBA3;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .cabecalho {
+            background-color: #9EF8EE;
+            color: #F24405;
+            width: 600px;
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.363);
+        }
+
+        .titulo {
+            text-transform: uppercase;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.226);
+            padding: 10px;
+        }
+
+        .paragrafo {
+            width: 400px;
+            margin: auto;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.226);
+            color: #c53704;
+        }
+
+        .principal {
+            width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+        }
+
+        .principal:hover {
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .lista {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 5px;
+            height: calc(100vh - 158px);
+        }
+
+        .lista li, a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #13678A;
+            background-color: #45C4B0;
+            padding: 4px;
+            border-radius: 4px;
+            list-style-position: inside;
+        }
+
+        .lista li:hover, a:hover {
+            color: #012030;
+            text-decoration: underline;
+        }
+
+        .aviso {
+            color: #ff0000;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .rodape {
+            background-color: #9EF8EE;
+            padding: 10px;
+            width: 600px;
+            margin: auto;
+            text-align: center;
+            color: #F24405;
+        }
+
+        .rodape .sobre-mim {
+            text-transform: uppercase;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.226);
+            font-weight: bold;
+        }
+
+        .rodape .sobre-mim .nome {
+            color: #F24405;
+            background-color: #9EF8EE;
+            display: inline-block;
+            transition: transform .2s ;
+        }
+
+        .rodape .sobre-mim .nome:hover {
+            text-decoration: none;
+            color: #c53704;
+            transform: scale(.95);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">Desafios Concluidos</h1>
+        <p class="paragrafo">
+            Segue essa lista com todos os desafios propostos concluído, enumerados pelo seu dia.
+        </p>
+    </header>
+    <main class="principal">
+        <ol class="lista">
+            <li>
+                <a href="https://jotapsampaio.github.io/css100days/dia1/" target="_blank">Dia 1: CSS de 100 dias</a>
+            </li>
+            <li>
+                <a href="https://jotapsampaio.github.io/css100days/dia2/" target="_blank">Dia 2: Menu Hambúrquer</a>
+            </li>
+        </ol>
+        <p class="aviso">Obs:Desafios ainda em conclusão ...</p>
+    </main>
+    <footer class="rodape">
+        <p class="sobre-mim">Feito com muito carinho por <a class="nome" href="https://github.com/jotapsampaio"><strong>João Paulo Sampaio</strong></a></p>
+    </footer>
+</body>
+
+</html>
