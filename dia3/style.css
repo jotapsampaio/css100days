@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.829);
+    border-radius: 10px;
+}
+
+.circulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: tudoEscuro 3s infinite;
+}
+
+.ceu {
+    background-color: lightblue;
+    width: 100%;
+    height: 70%;
+    animation: anoitecer 3s infinite;
+}
+
+.chao {
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 30%;
+}
+
+.triangulo-esquerdo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -33%);
+    width: 0px;
+    height: 0px;
+    border-left: 60px solid transparent;
+    border-bottom: 60px solid #fff;
+    border-right: 15px solid transparent;
+    z-index: 2;
+    animation: sombraPiramideEsquerda 3s linear infinite;
+}
+
+.triangulo-direito {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: rotateY(180deg);
+    width: 0px;
+    height: 0px;
+    border-left: 60px solid transparent;
+    border-bottom: 60px solid gray;
+    border-right: 0px solid transparent;
+    animation: sombraPiramideDireita 3s linear infinite;
+}
+
+.sol {
+    position: absolute;
+    top: 50%;
+    left: -15%;
+    width: 40px;
+    height: 40px;
+    background-color: #fbff00;
+    border-radius: 50%;
+    animation: porDoSol 3s linear infinite;
+}
+
+.sombra {
+    width: 0px;
+    height: 0px;
+    border-left: 0px solid transparent;
+    border-bottom: 20px solid rgba(128, 128, 128, 0.712);
+    border-right: 2000px solid transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    animation: sombraAreia 3s linear infinite;
+}
+
+@keyframes porDoSol {
+    0% {
+    background: #FFEF00;
+    left: -15%;
+    }
+    
+    30% {
+    background: #FFEF00;
+    top: 10%;
+    left: 10%;
+    }
+
+    50%{
+        background-color: #FFEF00;
+        top: -5px;
+    }
+
+    70%{
+        background-color: #F57209;
+        top: 5%;
+        left: 70%;
+    }
+
+    100% {
+        background: #F57209;
+        left: 100%;
+    }
+}
+
+@keyframes anoitecer {
+    0% {
+      background: #7DDFFC;
+    }
+      
+    30% {
+        background: #7DDFFC;
+    }
+      
+    70% {
+        background: #7DDFFC;
+    }
+  
+    100% {
+        background: #272C34;
+    }
+}
+
+@keyframes sombraAreia {
+    0% {
+        border-left: 0px solid transparent;
+        border-bottom: 10px solid rgba(128, 128, 128, 0.712);
+        border-right: 200px solid transparent;
+    }
+      
+    30% {
+        border-left: 0px solid transparent;
+        border-bottom: 20px solid rgba(128, 128, 128, 0.712);
+        border-right: 200px solid transparent;
+        left: 15%;
+    }
+      
+    70% {
+        border-left: 200px solid transparent;
+        border-bottom: 20px solid rgba(128, 128, 128, 0.712);
+        border-right: 0px solid transparent;
+        left: 10%;
+    }
+  
+    100% {
+        border-left: 200px solid transparent;
+        border-bottom: 0px solid rgba(128, 128, 128, 0.712);
+        border-right: 0px solid transparent;
+        left: 0%;
+    } 
+}
+
+@keyframes tudoEscuro {
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: .5;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes sombraPiramideDireita {
+    0%{
+        border-left: 60px solid transparent;
+        border-bottom: 60px solid gray;
+        border-right: 0px solid transparent;
+    }
+
+    90%{
+        border-left: 60px solid transparent;
+        border-bottom: 60px solid rgb(255, 255, 255);
+        border-right: 0px solid transparent;
+    }
+    100%{
+        border-left: 60px solid transparent;
+        border-bottom: 60px solid #000;
+        border-right: 0px solid transparent;
+    }
+}
+
+@keyframes sombraPiramideEsquerda {
+    0%{
+        border-left: 60px solid transparent;
+        border-bottom: 60px solid #fff;
+        border-right: 15px solid transparent;
+    }
+
+    90%{
+        border-left: 60px solid transparent;
+        border-bottom: 60px solid gray;
+        border-right: 15px solid transparent;
+    }
+
+    100%{
+        border-left: 60px solid transparent;
+        border-bottom: 60px solid gray;
+        border-right: 15px solid transparent;
+    }
+}
