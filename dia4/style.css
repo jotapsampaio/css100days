@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 400px;
+    background-color: coral;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+}
+
+.centro {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.circulo-maior {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.603);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    animation: loadingMaior 5s ease-in-out infinite;
+}
+
+ .circulo-medio {
+    width: 65px;
+    height: 65px;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.603);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    animation: loadingMedio 5s ease-in-out infinite;
+    visibility: hidden;
+}
+
+
+.circulo-menor {
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.603);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    animation: loadingMenor 5s ease-in-out infinite;
+}
+
+@keyframes loadingMaior {
+    0%{
+        transform: scale(0);
+        position: absolute;
+        top: 25%;
+        left: 25%; 
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(0);
+        position: absolute;
+        top: 25%;
+        left: 25%;
+    }
+}
+
+@keyframes loadingMedio {
+    0%{
+        transform: scale(0);
+        position: absolute;
+        top: 34%;
+        left: 34%;  
+    }
+
+    20%{
+        transform: scale(.1);
+        visibility: visible;
+    }
+
+    50%{
+        transform: scale(1);
+    }
+
+    80%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(0);
+        position: absolute;
+        top: 34%;
+        left: 34%;
+    }
+}
+
+@keyframes loadingMenor {
+    0%{
+        transform: scale(0);
+        position: absolute;
+        top: 41%;
+        left: 41%;  
+    }
+
+    30%{
+        transform: scale(0);
+    }
+
+    50%{
+        transform: scale(1);
+    }
+    
+    70%{
+        transform: scale(0);
+    }
+
+    100%{
+        transform: scale(0);
+        position: absolute;
+        top: 41%;
+        left: 41%;
+    }
+}
