@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.356);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    width: 300px;
+    height: 250px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
+}
+
+.cabecalho {
+    width: 100%;
+    height: 28%;
+    background-color: darkorange;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px 4px 0 0;
+}
+
+.cabecalho-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end ;
+    gap: 3px;
+    padding: 15px;
+}
+
+.recuo {
+    align-items: flex-start;
+}
+
+.titulo, .preco {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.data, .renevue {
+    font-size: .8em;
+}
+
+.grafico {
+    background-color: #fff;
+    width: 100%;
+    height: 72%;
+    border-radius: 0 0 4px 4px;
+}
+
+.sumario {
+    display: flex;
+    justify-content: flex-end;
+    color: #606060;
+    font-size: .7em;
+    gap: 15px;
+    padding: 15px;
+}
+
+.view span, .pucharses span {
+    display: inline-block;
+    width: 12px;
+    height: 4px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.grafico-vermelho, .grafico-azul {
+    position: relative;
+    height: 40px;
+}
+
+.bola-vermelha, .bola-azul {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.linha-vermelha, .linha-azul {
+    display: inline-block;
+    width: 2px;
+    height: 55px;
+    background-color: red;
+}
+
+
+.bola-azul, .linha-azul {
+    background-color: blue;
+}
+
+.primeira-bola-vermelha {
+    position: absolute;
+    top: 110%;
+    left: 5%;
+}
+
+.primeira-linha-vermelha {
+    position: absolute;
+    top: -1%;
+    left: 13%;
+    transform: rotate(45deg);
+}
+
+.segunda-bola-vermelha {
+    position: absolute;
+    top: 8%;
+    left: 19%;
+}
+
+.segunda-linha-vermelha {
+    position: absolute;
+    top: -20%;
+    left: 27%;
+    transform: rotate(-70deg);
+    height: 45px;
+}
+
+.terceira-bola-vermelha {
+    position: absolute;
+    top: 47%;
+    left: 33%;
+}
+
+.terceira-linha-vermelha {
+    position: absolute;
+    top: -20%;
+    left: 41%;
+    transform: rotate(70deg);
+    height: 45px;
+}
+
+.quarta-bola-vermelha {
+    position: absolute;
+    top: 8%;
+    left: 48%;
+}
+
+.quarta-linha-vermelha {
+    position: absolute;
+    top: 2%;
+    left: 55%;
+    transform: rotate(-45deg);
+    height: 45px;
+}
+
+.quinta-bola-vermelha {
+    position: absolute;
+    top: 85%;
+    left: 59%;
+}
+
+.quinta-linha-vermelha {
+    position: absolute;
+    top: 60%;
+    left: 67.5%;
+    transform: rotate(-70deg);
+    height: 45px;
+}
+
+.sexta-bola-vermelha {
+    position: absolute;
+    top: 127%;
+    left: 74%;
+}
+
+.sexta-linha-vermelha {
+    position: absolute;
+    top: 16%;
+    left: 82%;
+    transform: rotate(45deg);
+}
+
+.setima-bola-vermelha {
+    position: absolute;
+    top: 25%;
+    left: 88%;
+}
+
+.primeira-bola-azul {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.primeira-linha-azul {
+    position: absolute;
+    top: -5%;
+    left: 13%;
+    transform: rotate(75deg);
+    height: 40px;
+}
+
+.segunda-bola-azul {
+    position: absolute;
+    top: 22%;
+    left: 19%;
+}
+
+.segunda-linha-azul {
+    position: absolute;
+    top: -5%;
+    left: 25%;
+    transform: rotate(-70deg);
+    height: 40px;
+}
+
+.terceira-bola-azul {
+    position: absolute;
+    top: 54%;
+    left: 30%;
+}
+
+.terceira-linha-azul {
+    position: absolute;
+    top: 2%;
+    left: 38%;
+    transform: rotate(80deg);
+    height: 40px;
+}
+
+.quarta-bola-azul {
+    position: absolute;
+    top: 32%;
+    left: 44%;
+}
+
+.quarta-linha-azul {
+    position: absolute;
+    top: -5%;
+    left: 52%;
+    transform: rotate(-85deg);
+    height: 40px;
+}
+
+.quinta-bola-azul {
+    position: absolute;
+    top: 40%;
+    left: 58%;
+}
+
+.quinta-linha-azul {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    transform: rotate(-75deg);
+    height: 40px;
+}
+
+.sexta-bola-azul {
+    position: absolute;
+    top: 65%;
+    left: 71%;
+}
+
+.sexta-linha-azul {
+    position: absolute;
+    top: 15%;
+    left: 78%;
+    transform: rotate(80deg);
+    height: 40px;
+}
+
+.setima-bola-azul {
+    position: absolute;
+    top: 45%;
+    left: 84%;
+}
+
+.semana {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    text-transform: uppercase;
+    font-size: .7em;
+    color: #606060;
+}
+
+hr {
+    opacity: .3;
+    width: 90%;
+    margin: auto;
+}
